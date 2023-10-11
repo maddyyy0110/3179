@@ -1,0 +1,259 @@
+Year,Disaster,Quantity
+1980,Drought,24.0
+1981,Drought,18.0
+1982,Drought,6.0
+1983,Drought,26.0
+1984,Drought,6.0
+1985,Drought,3.0
+1986,Drought,4.0
+1987,Drought,15.0
+1988,Drought,17.0
+1989,Drought,7.0
+1990,Drought,19.0
+1991,Drought,12.0
+1992,Drought,11.0
+1993,Drought,9.0
+1994,Drought,11.0
+1995,Drought,6.0
+1996,Drought,7.0
+1997,Drought,17.0
+1998,Drought,20.0
+1999,Drought,26.0
+2000,Drought,25.0
+2001,Drought,22.0
+2002,Drought,24.0
+2003,Drought,14.0
+2004,Drought,11.0
+2005,Drought,20.0
+2006,Drought,9.0
+2007,Drought,11.0
+2008,Drought,16.0
+2009,Drought,18.0
+2010,Drought,21.0
+2011,Drought,16.0
+2012,Drought,18.0
+2013,Drought,9.0
+2014,Drought,20.0
+2015,Drought,27.0
+2016,Drought,14.0
+2017,Drought,12.0
+2018,Drought,17.0
+2019,Drought,15.0
+2020,Drought,12.0
+2021,Drought,16.0
+2022,Drought,22.0
+1980,Extreme temperature,3.0
+1981,Extreme temperature,1.0
+1982,Extreme temperature,2.0
+1983,Extreme temperature,2.0
+1984,Extreme temperature,1.0
+1985,Extreme temperature,7.0
+1986,Extreme temperature,2.0
+1987,Extreme temperature,5.0
+1988,Extreme temperature,5.0
+1989,Extreme temperature,5.0
+1990,Extreme temperature,13.0
+1991,Extreme temperature,8.0
+1992,Extreme temperature,7.0
+1993,Extreme temperature,3.0
+1994,Extreme temperature,9.0
+1995,Extreme temperature,13.0
+1996,Extreme temperature,5.0
+1997,Extreme temperature,13.0
+1998,Extreme temperature,12.0
+1999,Extreme temperature,8.0
+2000,Extreme temperature,30.0
+2001,Extreme temperature,23.0
+2002,Extreme temperature,15.0
+2003,Extreme temperature,25.0
+2004,Extreme temperature,16.0
+2005,Extreme temperature,40.0
+2006,Extreme temperature,14.0
+2007,Extreme temperature,25.0
+2008,Extreme temperature,16.0
+2009,Extreme temperature,20.0
+2010,Extreme temperature,28.0
+2011,Extreme temperature,15.0
+2012,Extreme temperature,52.0
+2013,Extreme temperature,13.0
+2014,Extreme temperature,17.0
+2015,Extreme temperature,12.0
+2016,Extreme temperature,12.0
+2017,Extreme temperature,10.0
+2018,Extreme temperature,27.0
+2019,Extreme temperature,21.0
+2020,Extreme temperature,5.0
+2021,Extreme temperature,3.0
+2022,Extreme temperature,12.0
+1980,Flood,39.0
+1981,Flood,38.0
+1982,Flood,47.0
+1983,Flood,48.0
+1984,Flood,46.0
+1985,Flood,56.0
+1986,Flood,48.0
+1987,Flood,65.0
+1988,Flood,74.0
+1989,Flood,44.0
+1990,Flood,59.0
+1991,Flood,75.0
+1992,Flood,57.0
+1993,Flood,84.0
+1994,Flood,88.0
+1995,Flood,93.0
+1996,Flood,91.0
+1997,Flood,95.0
+1998,Flood,94.0
+1999,Flood,122.0
+2000,Flood,157.0
+2001,Flood,155.0
+2002,Flood,171.0
+2003,Flood,157.0
+2004,Flood,127.0
+2005,Flood,191.0
+2006,Flood,226.0
+2007,Flood,217.0
+2008,Flood,165.0
+2009,Flood,151.0
+2010,Flood,184.0
+2011,Flood,156.0
+2012,Flood,136.0
+2013,Flood,148.0
+2014,Flood,136.0
+2015,Flood,161.0
+2016,Flood,159.0
+2017,Flood,127.0
+2018,Flood,127.0
+2019,Flood,195.0
+2020,Flood,201.0
+2021,Flood,222.0
+2022,Flood,176.0
+1980,Landslide,3.0
+1981,Landslide,7.0
+1982,Landslide,12.0
+1983,Landslide,16.0
+1984,Landslide,6.0
+1985,Landslide,4.0
+1986,Landslide,9.0
+1987,Landslide,14.0
+1988,Landslide,15.0
+1989,Landslide,15.0
+1990,Landslide,5.0
+1991,Landslide,9.0
+1992,Landslide,8.0
+1993,Landslide,25.0
+1994,Landslide,11.0
+1995,Landslide,16.0
+1996,Landslide,24.0
+1997,Landslide,13.0
+1998,Landslide,22.0
+1999,Landslide,18.0
+2000,Landslide,27.0
+2001,Landslide,24.0
+2002,Landslide,20.0
+2003,Landslide,21.0
+2004,Landslide,15.0
+2005,Landslide,13.0
+2006,Landslide,20.0
+2007,Landslide,10.0
+2008,Landslide,12.0
+2009,Landslide,29.0
+2010,Landslide,32.0
+2011,Landslide,17.0
+2012,Landslide,13.0
+2013,Landslide,11.0
+2014,Landslide,15.0
+2015,Landslide,20.0
+2016,Landslide,13.0
+2017,Landslide,25.0
+2018,Landslide,12.0
+2019,Landslide,25.0
+2020,Landslide,19.0
+2021,Landslide,12.0
+2022,Landslide,17.0
+1980,Storm,34.0
+1981,Storm,46.0
+1982,Storm,51.0
+1983,Storm,55.0
+1984,Storm,51.0
+1985,Storm,49.0
+1986,Storm,53.0
+1987,Storm,55.0
+1988,Storm,60.0
+1989,Storm,67.0
+1990,Storm,132.0
+1991,Storm,66.0
+1992,Storm,76.0
+1993,Storm,105.0
+1994,Storm,80.0
+1995,Storm,76.0
+1996,Storm,74.0
+1997,Storm,79.0
+1998,Storm,86.0
+1999,Storm,103.0
+2000,Storm,101.0
+2001,Storm,105.0
+2002,Storm,122.0
+2003,Storm,85.0
+2004,Storm,121.0
+2005,Storm,130.0
+2006,Storm,76.0
+2007,Storm,100.0
+2008,Storm,112.0
+2009,Storm,87.0
+2010,Storm,94.0
+2011,Storm,81.0
+2012,Storm,90.0
+2013,Storm,105.0
+2014,Storm,98.0
+2015,Storm,121.0
+2016,Storm,86.0
+2017,Storm,126.0
+2018,Storm,94.0
+2019,Storm,91.0
+2020,Storm,127.0
+2021,Storm,119.0
+2022,Storm,105.0
+1980,Wildfire,1.0
+1981,Wildfire,2.0
+1982,Wildfire,2.0
+1983,Wildfire,10.0
+1984,Wildfire,7.0
+1985,Wildfire,11.0
+1986,Wildfire,5.0
+1987,Wildfire,7.0
+1988,Wildfire,0.0
+1989,Wildfire,2.0
+1990,Wildfire,4.0
+1991,Wildfire,8.0
+1992,Wildfire,8.0
+1993,Wildfire,2.0
+1994,Wildfire,13.0
+1995,Wildfire,7.0
+1996,Wildfire,4.0
+1997,Wildfire,15.0
+1998,Wildfire,18.0
+1999,Wildfire,21.0
+2000,Wildfire,30.0
+2001,Wildfire,14.0
+2002,Wildfire,22.0
+2003,Wildfire,14.0
+2004,Wildfire,8.0
+2005,Wildfire,13.0
+2006,Wildfire,9.0
+2007,Wildfire,18.0
+2008,Wildfire,5.0
+2009,Wildfire,9.0
+2010,Wildfire,7.0
+2011,Wildfire,8.0
+2012,Wildfire,6.0
+2013,Wildfire,10.0
+2014,Wildfire,4.0
+2015,Wildfire,13.0
+2016,Wildfire,10.0
+2017,Wildfire,15.0
+2018,Wildfire,10.0
+2019,Wildfire,14.0
+2020,Wildfire,9.0
+2021,Wildfire,19.0
+2022,Wildfire,15.0

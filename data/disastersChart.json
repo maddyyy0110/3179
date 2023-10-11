@@ -1,0 +1,13 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title":"Global Natural Disaster Frequency per Year",
+    "width": 800,
+    "height": 400,
+    "data": { "url": "./data/disasterData.csv" },
+    "mark": { "type": "bar" },
+    "encoding": {
+        "x": {"field": "Year", "type": "ordinal" },
+        "y": { "aggregate": "sum", "field": "Quantity", "title":"Disaster Frequency" },
+        "color": { "field": "Disaster" }
+    }
+}

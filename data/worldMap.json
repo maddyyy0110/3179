@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Global Temperature Compared to Normal (1961-2018)",
+  "width": 800,
+  "height": 500,
+  "params": [
+      {
+          "name": "Year_selection",
+          "value": 2018,
+          "bind": {
+              "input": "range",
+              "min": 1961,
+              "max": 2022,
+              "step": 1,
+              "name": "Year:  "
+          }
+      }
+  ],
+  "projection": {"type": "equalEarth"},
+  "layer": [{
+          "data": {
+              "url": "./data/ne_110m_admin_0_countries.topojson",
+              "format": { "type": "topojson", "feature": "ne_110m_admin_0_countries" }
+          },
+          "transform": [{
+              "calculate": "'Data is not available in ' + datum.properties.NAME",
+              "as": "note"
+          }],
+          "mark": {
+              "type": "geoshape",
+              "fill": "#ddd",
+              "stroke": "white",
+              "strokeWidth": 1
+          },
+          "encoding": { "tooltip": { "field": "note" } }
+      },
+      {
+          "data": {
+              "url": "./data/dataLongForm.csv"
+          },
+          "transform": [{
+                  "lookup": "ISO3",
+                  "from": {
+                      "data": {
+                          "url": "./data/ne_110m_admin_0_countries.topojson",
+                          "format": {
+                              "type": "topojson",
+                              "feature": "ne_110m_admin_0_countries"
+                          }
+                      },
+                      "key": "properties.ISO_A3"
+                  },
+                  "as": "geo"
+              },
+              { "filter": "datum.Year == Year_selection" }
+          ],
+          "mark": { "type": "geoshape", "stroke": "#fff", "strokeWidth": 0.5 },
+          "encoding": {
+              "shape": { "field": "geo", "type": "geojson" },
+              "color": {
+                  "field": "Temperature",
+                  "type": "quantitative",
+                  "scale": {
+                      "domain": [
+                          -2,
+                          2
+                      ],
+                      "scheme": "blueorange"
+                  },
+                  "legend": { "format": ".2s" }
+              },
+              "tooltip": [
+                  { "field": "ISO3", "type": "nominal", "title": "Country Code" },
+                  {
+                      "field": "Temperature",
+                      "type": "quantitative",
+                      "title": "Temperature in Celsius",
+                      "format": ","
+                  },
+                  { "field": "Year", "type": "quantitative", "title": "Year" }
+              ]
+          }
+      }
+  ],
+  "config": {}
+}
