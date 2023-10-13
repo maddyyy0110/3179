@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Global Temperature Compared to Normal (1961-2018)",
+  "title": "Mean Global Temperatures Compared to 1950s",
   "width": 800,
   "height": 500,
   "params": [

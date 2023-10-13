@@ -4,7 +4,7 @@
     "width": 800,
     "height": 400,
     "data": { "url": "./data/disasterData.csv" },
-    "mark": { "type": "bar" },
+    "mark": { "type": "area" },
     "encoding": {
         "x": {"field": "Year", "type": "ordinal" },
         "y": { "aggregate": "sum", "field": "Quantity", "title":"Disaster Frequency" },
