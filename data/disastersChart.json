@@ -15,7 +15,7 @@
         "color": { 
             "field": "Disaster" ,
             "sort": ["Drought","Extreme temperature","Landslide","Wildfire", "Storm", "Flood"],
-            "scale": {"range": ["#E69F00","#89BEDC","#009E73","#F0E442","#0072B2","#D55E00"]},
+            "scale": {"range": ["#E69F00","#89BEDC","#cc79a7","#F0E442","#0072B2","#D55E00"]},
             "legend": {"title": "Disaster", "titleFontSize":13, "labelFontWeight":"bold" }
         }
         
