@@ -1,0 +1,31 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Donut chart of predicted species extinction",
+    "title": "Predicted Species Extinct by 2050",
+    "data": {
+      "values": [
+        {"category": "Safe", "value": 2},
+        {"category": "Extinct", "value": 1}
+      ]
+    },
+    "config": {
+        "style": {
+          "cell": {
+            "stroke": "transparent"
+          }
+        }
+      },
+    "mark": {"type": "arc", "innerRadius": 50, "tooltip": true},
+    "encoding": {
+      "theta": {"field": "value", "type": "quantitative", "stack":"normalize"},
+      "color": {
+        "field": "category", 
+        "type": "nominal",
+        "scale": {"range": ["#E63946","#1D3557"]},
+        "legend": {"title":""}
+    
+    },
+      "order": {"field": "value", "type": "quantitative", "sort": "ascending"}
+    }
+  }
+  

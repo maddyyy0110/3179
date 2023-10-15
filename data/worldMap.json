@@ -1,6 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Mean Global Temperatures Compared to 1950s",
+  "title": {
+        "text":"Global Mean Temperature compared to 1950",
+        "fontSize":16
+
+    },
   "width": 800,
   "height": 500,
   "params": [
@@ -16,6 +20,7 @@
           }
       }
   ],
+  
   "projection": {"type": "equalEarth"},
   "layer": [{
           "data": {
@@ -28,11 +33,15 @@
           }],
           "mark": {
               "type": "geoshape",
-              "fill": "#ddd",
+              "fill": "#aaaaaa",
               "stroke": "white",
               "strokeWidth": 1
           },
-          "encoding": { "tooltip": { "field": "note" } }
+          "encoding": { 
+            "tooltip":      
+                { "field": "note" } 
+        
+            }
       },
       {
           "data": {
@@ -67,20 +76,26 @@
                       ],
                       "scheme": "blueorange"
                   },
-                  "legend": { "format": ".2s" }
+                  "legend": { "format": ".2s", "title": "Temperature °C", "titleFontSize":13, "labelFontWeight":"bold" }
               },
               "tooltip": [
-                  { "field": "ISO3", "type": "nominal", "title": "Country Code" },
+                  { "field": "Country", "type": "nominal", "title": "Country" },
                   {
                       "field": "Temperature",
                       "type": "quantitative",
-                      "title": "Temperature in Celsius",
-                      "format": ","
+                      "title": "Temperature °C",
+                      "format": ".2f"
                   },
                   { "field": "Year", "type": "quantitative", "title": "Year" }
               ]
           }
       }
   ],
-  "config": {}
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  }
 }

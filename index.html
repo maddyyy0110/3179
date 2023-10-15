@@ -8,21 +8,21 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
-    <script src="./js/vega.js"></script>
-    <title>Project 2</title>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
+    <title>Project 2</title>
 
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#3372DF">
 
-    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./images/leaf.png">
 
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-red.min.css">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- <link rel="stylesheet" href="./styles/styles.css"> -->
     <style>
     #view-source {
       position: fixed;
@@ -37,45 +37,87 @@
   </head>
   <body>
     <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
-      <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
-        <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">FIT3179 Project 2</span>
-          <div class="mdl-layout-spacer"></div>
-        </div>
-      </header>
-      <div class="demo-ribbon"></div>
+      <div class="demo-ribbon">
+        <img>
+      </div>
       <main class="demo-main mdl-layout__content">
         <div class="demo-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <h1>Global Climate Change</h1>
+            <h1 style="font-family: Cambria, sans-serif; color: black; font-size: 70px; text-align: center;" >Global Climate Change</h1>
+            <br>
+            <h3 style="font-size: 30px; color: black;font-family: Cambria, sans-serif;">Global Warming</h3>
             <br>
             <div id="ChloroMap" text ></div>
             <br>
             <br>
             <br>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate libero eu malesuada posuere. Ut lobortis euismod feugiat. Vestibulum non arcu lectus. Integer vitae ultrices dui, ultricies tincidunt tortor. Duis vel est fringilla, euismod ligula vel, efficitur lorem. Mauris malesuada magna non ipsum elementum, quis egestas tellus venenatis. In vel nisi nunc. Aliquam tristique in est ac vestibulum. In hac habitasse platea dictumst. Cras augue velit, commodo non sem eget, iaculis eleifend augue. Mauris vestibulum luctus augue, at bibendum nunc bibendum sed.
+            <div class="container">
+              <div class="column">Since 1950 global mean temperatures have followed a consistent upwards trend. In some countries the temperature differential has reached two degrees higher. While throughout the history of our planet the climate has changed significantly, never before has it been at the rate we are experiencing currently.</div>
+              <div class="column">The vast majority of climate scientists concur that the unprecendented rate in which global temperatures are increasing is linked to human behaviour. More specifically, this can be attributed to CO2 production. Unfortunately the change in our climate has had far reaching consequences for our planet, the likes of which we will explore below.</div>
+            </div>
+            <br>
+            <h3 style="font-size: 30px; color: black;font-family: Cambria, sans-serif;">Impact to the Environment</h2>
 
-            </p>
+            <br>
+            <div id="stackedAreaChart"></div>
             <br>
             <br>
-            <div id="stackedBarChart"></div>
             <br>
-            <br>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate libero eu malesuada posuere. Ut lobortis euismod feugiat. Vestibulum non arcu lectus. Integer vitae ultrices dui, ultricies tincidunt tortor. Duis vel est fringilla, euismod ligula vel, efficitur lorem. Mauris malesuada magna non ipsum elementum, quis egestas tellus venenatis. In vel nisi nunc. Aliquam tristique in est ac vestibulum. In hac habitasse platea dictumst. Cras augue velit, commodo non sem eget, iaculis eleifend augue. Mauris vestibulum luctus augue, at bibendum nunc bibendum sed.
+            <div class = "container">
+              <div>As climate change worsens so too does the frequency and severity of natural disasters. World wide we can see that the number of natural disasters per year has more than doubled since 1980. We can see that flooding has increased the most in comparison to other disasters. This is unsurprising when we consider how much average ocean levels have increased in previous decades.</div>
+              <div>While wildfires globally have not increased as much as other disasters, here in Australia we have had a different story. Over the past 10 years we have had many black summers, many lives lives and homes lost. Along the east coast we can expect this trend to continue in the years to come. Inhabitants of NSW in particular will have to seriously consider the risk they will face in their current location.</div>
+            </div>
 
-            </p>
+
+            <br>
+            <br>
+            
+            <br>
+            <br>
+            
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--1-col"></div>
+              <div class="mdl-cell mdl-cell--5-col">
+                <div id = "donutChart"></div>
+              </div>
+              <div class="mdl-cell mdl-cell--5-col">
+                <span style="white-space: pre-line">Should the current rate of CO2 production continue we will see devestating impacts on our planets flora and fauna.
+                  
+                  The 33% predicted extinction figure can be attributed to: Loss of habitat, reduction in food availability and natural disasters. Biodiversity is extremely important to ecosystems and as such significant species loss has a snowballing effect.
+                </span>
+              </div>
+              <div class="mdl-cell mdl-cell--1-col"></div>
+            </div>
+
+            <br>
+            <h3 style="font-size: 30px; color: black;font-family: Cambria, sans-serif;">Impact to Humanity</h3>
+            <div id = "barChart"></div>
+            <br>
+            <br>
+            <div id="centre" style="text-align: center;">
+              <button id="barChartButton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                Normalised
+              </button>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class = "container">
+              <div>The above graph reveals deadly impact of our lack action to combat climate change. Thousands die every year from climate related catastropes. Floods, fires, cyclones, climate change is undeniably a huge threat to humanity. The second graph which is normalised for population demonstrates that not only is climate change it also disproportionately effects the global south. </div>
+              <div>While the absolute number of climate related deaths in Bhutan is relatively low in comparison to other countries, its loss of life relative to its population is 3x higher than the next worse off country. While the west continues to dominant in the production of green house gases, the brunt of the consequences from this reckless behaviour is borne by non western countries.</div>
+            </div>
 
           </div>
         </div>
         <footer class="demo-footer mdl-mini-footer">
           <div class="mdl-mini-footer--left-section">
+            <span style="font-size: 11;">Author: Maddy Prazeus 2023</span>
           </div>
         </footer>
       </main>
     </div>
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/vega.js"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
   </body>
 </html>

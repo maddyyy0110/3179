@@ -1,13 +1,23 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title":"Global Natural Disaster Frequency per Year",
+    "title": {
+        "text":"Global Natural Disaster Frequency per Year",
+        "fontSize":16
+
+    },
     "width": 800,
     "height": 400,
     "data": { "url": "./data/disasterData.csv" },
-    "mark": { "type": "area" },
+    "mark": { "type": "area","tooltip": true },
     "encoding": {
-        "x": {"field": "Year", "type": "ordinal" },
-        "y": { "aggregate": "sum", "field": "Quantity", "title":"Disaster Frequency" },
-        "color": { "field": "Disaster" }
+        "x": {"field": "Year", "type": "ordinal", "title": "", "axis":{"labelAngle":-45} },
+        "y": { "aggregate": "sum", "field": "Quantity", "title":"Disaster Frequency", "axis":{"titleFontSize":13}},
+        "color": { 
+            "field": "Disaster" ,
+            "sort": ["Drought","Extreme temperature","Landslide","Wildfire", "Storm", "Flood"],
+            "scale": {"range": ["#E69F00","#89BEDC","#009E73","#F0E442","#0072B2","#D55E00"]},
+            "legend": {"title": "Disaster", "titleFontSize":13, "labelFontWeight":"bold" }
+        }
+        
     }
 }
